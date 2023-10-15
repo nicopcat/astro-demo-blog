@@ -1,0 +1,164 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #83a598 ;
+}
+a:hover{
+  color: #adcabf ;
+
+}
+
+/* h1 {
+  color: #d79921;
+  margin-bottom: 1rem!important;
+  font-size: 1.5rem;
+} */
+
+ h1{
+  font-size: 1.5em;
+  color: #dd4f23;
+}
+
+ h1::before {
+  content: "# ";
+  color: #dd4f23;
+}
+
+ h2 {
+  font-size: 1.1em;
+  color: #d79720;
+}
+
+ h3 {
+  font-size: 1em;
+  color: #458588;
+}
+
+/* 导航样式 */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 25px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #ff9776;
+}
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.dark .nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(210, 210, 210);
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:  #83a598 ;
+}
+
+/* .dark  .nav-links a:hover,
+.dark  .nav-links a:focus {
+  color: rgb(249, 249, 249);
+} */
+
+
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+.dark .nav-links {
+  /* margin-left: 5em; */
+  display: block;
+  position: static;
+  width: auto;
+  background: none;
+  border-bottom: 1px solid rgb(239, 239, 239);
+}
+  .nav-links {
+    /* margin-left: 5em; */
+    display: flex;
+    width: auto;
+    background: none;
+    border-bottom: 1px solid rgb(239, 239, 239);
+  }
+  .dark   .nav-links {
+    /* margin-left: 5em; */
+    display: flex;
+    width: auto;
+    background: none;
+    border-bottom: 1px solid rgb(239, 239, 239);
+  }
+  .dark .nav-links a {
+    display: inline-block;
+    padding: .2rem 1rem .2rem 0;
+  }
+  .nav-links a {
+    display: inline-block;
+    padding: .2rem 1rem .2rem 0;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+.dark .bg{
+  margin-top: 5vh ;
+  min-width: 720px;
+  min-height: 80vh;
+  background-color: #fffbe9;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+ .bg{
+  margin-top: 5vh ;
+  min-width: 720px;
+  min-height: 80vh;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+html.dark {
+  background-color: #282828;
+  /* color: #fff; */
+}
